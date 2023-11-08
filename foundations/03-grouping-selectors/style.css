@@ -4,7 +4,10 @@
 }
 
 
-
+.both.first {
+    background-color: black;
+    color: white;
+}
 
 
 /* * **The first element**: a black background and white text
