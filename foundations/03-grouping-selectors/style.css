@@ -9,8 +9,6 @@
     color: white;
 }
 
-
-/* * **The first element**: a black background and white text
-
-* **The second element**: a yellow background
-
+.both.second {
+    background-color: yellow;
+}
