@@ -1,3 +1,12 @@
+/* | CSS RESET | ------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* | GENERAL STYLES | -------------------------- */
 .header  {
   font-family: monospace;
   background: papayawhip;
@@ -9,17 +18,35 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  
+  margin: 15px;
 }
 
-ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
-}
+ul {list-style-type: none;}
 
 a {
   font-size: 22px;
   background: white;
   padding: 8px;
-  /* this removes the line under the links */
   text-decoration: none;
+}
+
+
+/* | FLEXBOX | --------------------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  margin: 10px;
+  gap: 12px;
 }
