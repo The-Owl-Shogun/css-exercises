@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
-  height: 100vh;
+/* | CSS RESET | ------------------------------------- */
+* {
   margin: 0;
-  overflow: hidden;
-  font-family: Roboto, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img {
-  width: 600px;
-}
+/* | GENERAL STYLES | -------------------------------- */
+body {font-family: Roboto, sans-serif;}
+
+img {width: 600px;}
 
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  padding: 12px 18px;
+  margin-left: 5px;
 }
 
 input {
@@ -25,3 +29,62 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+ul, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover, a:focus {
+  color: #686868;
+}
+
+/* | FLEXBOX | --------------------------------------- */
+/* .header | .content | .footer */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+  margin-bottom: auto;
+}
+
+.left-links, .right-links {
+  display: flex;
+  gap: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 15px;
+
+  margin-top: auto;
+}
+
+.master-container {
+  display: flex;
+  border: 2px solid firebrick;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* .
+
+
+.master-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid firebrick;
+} 
+ */
